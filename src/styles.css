@@ -1,7 +1,33 @@
+:root {
+  --primary-color: #343434;
+  --secondary-color: #000;
+}
+
 h1 {
   font-family: "Audiowide", sans-serif;
+  text-transform: uppercase;
+  font-size: 72px;
+  line-height: 76px;
+  margin-bottom: 0;
 }
 
 h2 {
   font-family: "Montserrat", sans-serif;
+  font-size: 32px;
+
+  margin-top: 20px;
+  margin: auto 300px;
+}
+
+.gradient-background {
+  background-image: url(/images/gradient-background.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.landing-page {
+  text-align: center;
+  padding-top: 300px;
+  padding-bottom: 300px;
+  color: var(--primary-color);
 }

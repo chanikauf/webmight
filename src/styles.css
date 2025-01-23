@@ -27,9 +27,14 @@ h2 {
 
 .landing-page {
   text-align: center;
-  padding-top: 200px;
+  padding-top: 160px;
   padding-bottom: 300px;
   color: var(--primary-color);
+}
+
+.logo {
+  max-width: 260px;
+  margin: 40px auto auto 70px;
 }
 
 .btn-branding {

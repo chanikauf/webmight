@@ -27,7 +27,22 @@ h2 {
 
 .landing-page {
   text-align: center;
-  padding-top: 300px;
+  padding-top: 200px;
   padding-bottom: 300px;
   color: var(--primary-color);
 }
+
+.btn-branding {
+  padding: 16px 30px;
+  margin-top: 125px;
+  border: 1px solid var(--primary-color);
+  border-radius: 100px;
+  font-size: 24px;
+}
+
+.btn-branding:hover {
+  color: #fff;
+  background-color: #343434;
+  transition-duration: .3s;
+}
+

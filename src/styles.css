@@ -25,7 +25,6 @@ h3 {
   text-transform: uppercase;
   color: var(--primary-color);
   font-size: 50px;
-  
 }
 
 h4 {
@@ -33,7 +32,6 @@ h4 {
   font-size: 16px;
   text-transform: uppercase;
   color: #989898;
-  
 }
 
 p {
@@ -73,14 +71,21 @@ p {
   border: 1px solid var(--primary-color);
   border-radius: 100px;
   font-size: 24px;
+  color: var(--primary-color);
+  background: linear-gradient(
+    90deg,
+    #00aee7 50%,
+    transparent 50%
+  ); /* Initial gradient */
+  background-size: 200% 100%;
+  background-position: right;
+  transition: background-position 0.8s, color 0.8s;
 }
 
 .btn-branding:hover {
-  color: #fff;
-  background-color: #343434;
-  transition-duration: background-color 0.3s, color 0.3s;
+  background-position: left;
+  border: 1px solid var(--primary-color);
 }
-
 /* Navbar Styles */
 
 /*.navbar-2 {
@@ -118,7 +123,6 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center; /* Center the navbar vertically */
-
   z-index: 1030; /* Higher stacking order */
 }
 
@@ -139,19 +143,8 @@ p {
   font-size: 24px;
 }
 
-@media (max-width: 768px) {
-  .nav-items {
-    transform: rotate(-90deg) translateX(-50%); /* Continued rotation on smaller screens */
-  }
-
-  .nav-link {
-    font-size: 18px; /* Adjust font size for mobile devices */
-  }
-
-  .navbar-nav {
-    gap: 10px; /* Reduce gap between items on smaller screens */
-    margin-right: 15px; /* Adjust right margin for mobile */
-  }
+.nav-link.active {
+  border-bottom: 3px solid #00aee7;
 }
 
 /*Portfolio Styles*/
@@ -171,9 +164,11 @@ p {
 
 /* Contact Styles */
 
-#contact {
-  margin: 280px auto 200px;
+.contact {
+  padding-top: 280px;
+  padding-bottom: 300px;
 }
+
 
 .email-link {
   text-decoration: none;
@@ -191,4 +186,73 @@ footer {
 .designed-by {
   color: #fff;
   margin-left: 40px;
+  margin-right: 40px;
+}
+@media (max-width: 1240px) {
+  body {
+    text-align: center;
+  }
+  h2 {
+    font-size: 25px;
+    margin: 0;
+  }
+  p {
+    margin: 30px auto;
+  }
+
+  .nav-items {
+    transform: rotate(0);
+  }
+  .navbar-2 {
+  
+    margin-top: 40px;
+    justify-content: right;
+  }
+}
+
+@media (max-width: 991px) {
+  .nav-items {
+    background-color: #ffffff91;
+    border-radius: 10px;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    text-align: center;
+  }
+
+  .nav-link {
+    font-size: 18px; /* Adjust font size for mobile devices */
+  }
+
+  h2 {
+    font-size: 25px;
+    margin: 0;
+    margin-top: 20px;
+  }
+
+  .landing-page {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .home-intro {
+    margin-bottom: 50px;
+  }
+
+  h3 {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .designed-by {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 540px) {
+  h1 {
+    font-size: 60px;
+    line-height: 1;
+  }
 }

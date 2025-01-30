@@ -65,6 +65,10 @@ p {
   margin: 40px auto auto 70px;
 }
 
+.logo-mini {
+  margin: 20px auto auto 35px;
+}
+
 .btn-branding {
   padding: 16px 30px;
   min-width: 215px;
@@ -88,53 +92,28 @@ p {
 }
 /* Navbar Styles */
 
-/*.navbar-2 {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  right: -270px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  transition: right 0.3s ease;
-}
-
-.navbar-nav {
-  transform: rotate(90deg) translateY(-100%);
-}
-
-.nav-link {
-  font-family: var(--primary-font);
-  text-transform: uppercase;
-  font-size: 24px;
-  margin: 0 60px;
-}
-
-.active {
-  text-decoration: underline;
-}
-*/
-
 .navbar-2 {
   position: fixed;
   top: 0;
-  right: 0; /* Fixed on the right side of the screen */
-  height: 100%; /* Full-height */
+  right: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Center the navbar vertically */
-  z-index: 1030; /* Higher stacking order */
+  z-index: 1030;
+  max-width: 70px;
+  height: 100vh;
+  align-items: flex-end;
 }
 
 .nav-items {
-  transform: rotate(90deg) translateX(60%); /* Rotate and position properly */
-  transform-origin: top right; /* Set the rotation origin to the top right */
+  transform: rotate(90deg) translateX(60%);
+  transform-origin: top right;
+  margin: auto 0;
 }
 
 .navbar-nav {
-  flex-direction: column; /* Stack items vertically */
-  gap: 100px; /* Space out items vertically */
-  margin-right: 20px; /* Right margin for spacing from edge */
+  flex-direction: column;
+  gap: 100px;
+  margin-right: 20px;
 }
 
 .nav-link {
@@ -154,7 +133,6 @@ p {
 
 .portfolio-img {
   border-radius: 50px;
-  max-width: 600px;
   box-shadow: 10px 10px 50px 5px rgba(0, 0, 0, 0.25);
 }
 
@@ -168,7 +146,6 @@ p {
   padding-top: 280px;
   padding-bottom: 300px;
 }
-
 
 .email-link {
   text-decoration: none;
@@ -189,9 +166,6 @@ footer {
   margin-right: 40px;
 }
 @media (max-width: 1240px) {
-  body {
-    text-align: center;
-  }
   h2 {
     font-size: 25px;
     margin: 0;
@@ -204,9 +178,24 @@ footer {
     transform: rotate(0);
   }
   .navbar-2 {
-  
+    height: auto;
     margin-top: 40px;
     justify-content: right;
+  }
+}
+
+@media (max-width: 1200px) {
+  h3 {
+    font-size: 36px;
+  }
+
+  p {
+    margin: 15px 0;
+  }
+
+  .btn-branding {
+    font-size: 18px;
+    padding: 12px 20px;
   }
 }
 
@@ -219,6 +208,14 @@ footer {
 @media (max-width: 768px) {
   body {
     text-align: center;
+  }
+
+  p {
+    max-width: 100%;
+  }
+
+  .portfolio-img {
+    display: none;
   }
 
   .nav-link {
@@ -241,7 +238,7 @@ footer {
   }
 
   h3 {
-    font-size: 40px;
+    font-size: 35px;
     text-align: center;
   }
 

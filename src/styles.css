@@ -165,6 +165,7 @@ footer {
   margin-left: 40px;
   margin-right: 40px;
 }
+
 @media (max-width: 1240px) {
   h2 {
     font-size: 25px;
@@ -201,7 +202,7 @@ footer {
 
 @media (max-width: 991px) {
   .nav-items {
-    background-color: #ffffff91;
+    background-color: #fff;
     border-radius: 10px;
   }
 }
@@ -213,19 +214,23 @@ footer {
   p {
     max-width: 100%;
   }
-
+  
+  h1 {
+    font-size: 60px;
+    line-height: 1;
+  }
   .portfolio-img {
     display: none;
   }
 
   .nav-link {
-    font-size: 18px; /* Adjust font size for mobile devices */
+    font-size: 18px;
   }
 
   h2 {
     font-size: 25px;
     margin: 0;
-    margin-top: 20px;
+    padding-top: 15px;
   }
 
   .landing-page {
@@ -244,12 +249,5 @@ footer {
 
   .designed-by {
     font-size: 8px;
-  }
-}
-
-@media (max-width: 540px) {
-  h1 {
-    font-size: 60px;
-    line-height: 1;
   }
 }
